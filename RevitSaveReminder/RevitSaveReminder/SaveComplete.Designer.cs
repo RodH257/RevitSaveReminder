@@ -29,49 +29,51 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SaveComplete));
-            this.lblSaveTitle = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.SaveTitleLabel = new System.Windows.Forms.Label();
+            this.OkButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lblSaveTitle
+            // SaveTitleLabel
             // 
-            this.lblSaveTitle.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSaveTitle.Location = new System.Drawing.Point(81, 9);
-            this.lblSaveTitle.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblSaveTitle.Name = "lblSaveTitle";
-            this.lblSaveTitle.Size = new System.Drawing.Size(396, 65);
-            this.lblSaveTitle.TabIndex = 0;
-            this.lblSaveTitle.Text = "Document Synchronized with central at 1.00 PM";
-            this.lblSaveTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SaveTitleLabel.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveTitleLabel.Location = new System.Drawing.Point(74, 9);
+            this.SaveTitleLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.SaveTitleLabel.Name = "SaveTitleLabel";
+            this.SaveTitleLabel.Size = new System.Drawing.Size(396, 65);
+            this.SaveTitleLabel.TabIndex = 0;
+            this.SaveTitleLabel.Text = "Document Synchronized with central at 1.00 PM";
+            this.SaveTitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // OkButton
             // 
-            this.button1.Location = new System.Drawing.Point(190, 95);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(148, 65);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "OK";
-            this.button1.UseVisualStyleBackColor = true;
+            this.OkButton.Location = new System.Drawing.Point(198, 95);
+            this.OkButton.Name = "OkButton";
+            this.OkButton.Size = new System.Drawing.Size(148, 65);
+            this.OkButton.TabIndex = 1;
+            this.OkButton.Text = "OK";
+            this.OkButton.UseVisualStyleBackColor = true;
+            this.OkButton.Click += new System.EventHandler(this.OkButton_Click);
             // 
             // SaveComplete
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(544, 187);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.lblSaveTitle);
+            this.Controls.Add(this.OkButton);
+            this.Controls.Add(this.SaveTitleLabel);
             this.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "SaveComplete";
             this.Text = "Save to Central Complete";
+            this.Load += new System.EventHandler(this.SaveComplete_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label lblSaveTitle;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label SaveTitleLabel;
+        private System.Windows.Forms.Button OkButton;
     }
 }

@@ -15,5 +15,21 @@ namespace RevitSaveReminder
         {
             InitializeComponent();
         }
+
+        private void SaveComplete_Load(object sender, EventArgs e)
+        {
+            //When the form is shown, flash the taskbar 
+            FlashWindow.Start(this);
+
+            //play the sound
+            AlertSoundPlayer.PlaySound();
+        }
+
+        private void OkButton_Click(object sender, EventArgs e)
+        {
+            //Stop the flashing
+            FlashWindow.Stop(this);
+            this.Close();
+        }
     }
 }
