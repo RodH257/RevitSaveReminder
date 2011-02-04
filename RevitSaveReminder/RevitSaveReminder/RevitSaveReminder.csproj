@@ -33,9 +33,14 @@
   <ItemGroup>
     <Reference Include="RevitAPI">
       <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit Architecture 2011\Program\RevitAPI.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="RevitAPIUI">
       <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit Architecture 2011\Program\RevitAPIUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RodsUtilities">
+      <HintPath>..\..\..\RodsUtilities\RodsRevitUtilities\RodsUtilities\bin\Debug\RodsUtilities.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -64,9 +69,14 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="applause_y.wav" />
-    <EmbeddedResource Include="chime_up.wav" />
-    <EmbeddedResource Include="shotgun_x.wav" />
+    <EmbeddedResource Include="applause.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="chime.wav" />
+    <EmbeddedResource Include="shotgun.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

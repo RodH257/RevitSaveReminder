@@ -41,7 +41,7 @@
             this.SaveTitleLabel.Name = "SaveTitleLabel";
             this.SaveTitleLabel.Size = new System.Drawing.Size(396, 65);
             this.SaveTitleLabel.TabIndex = 0;
-            this.SaveTitleLabel.Text = "Document Synchronized with central at 1.00 PM";
+            this.SaveTitleLabel.Text = "Document synchronized with central at 1.00 PM";
             this.SaveTitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // OkButton
