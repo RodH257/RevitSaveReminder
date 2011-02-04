@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>RevitSaveReminder</Name>
+    <Assembly>C:\devel\Personal\Revit\RSR\RevitSaveReminder\RevitSaveReminder\bin\Debug\RevitSaveReminder.dll</Assembly>
+    <AddInId>60421191-6dc5-4505-aa80-8b68ffffeda9</AddInId>
+    <FullClassName>RevitSaveREminder.Application</FullClassName>
+  </AddIn>
+</RevitAddIns>
