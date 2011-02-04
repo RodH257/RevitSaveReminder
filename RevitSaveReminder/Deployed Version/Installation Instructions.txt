@@ -1,0 +1,13 @@
+RevitSaveReminder by Rod Howarth (http://www.rodhowarth.com)
+Code available on GitHub - https://github.com/RodH257/RevitSaveReminder
+
+Create C:\Program Files\RevitSaveReminder\ and put all files from zip there.
+
+Move RevitSaveReminder-Manifest.addin to C:\ProgramData\Autodesk\Revit\Addins\2011\ if you are on Vista/7 
+
+or 
+
+to C:\Documents and Settings\All Users\Application Data\Autodesk\Revit\Addins\2011\ if you are on XP. 
+
+It should then be installed! If you wish to configure the sound that is being played edit RevitSaveReminder.dll.config 
+- I've included 'shotgun' 'chime' and 'applause' but you can put the full path to a ACM encoded wav file. 
